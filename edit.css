@@ -15,9 +15,9 @@ a{
 
 .bgVideo{
     position: absolute;
-    top: 38.5%;
+    top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%); /* keep centered in parent */
+    transform: translate(-50%, -39.3%);
     z-index: -1; /* keep video behind other content */
     width: 100%; /* always cover horizontal */
   }
@@ -71,7 +71,7 @@ a{
 
 @media only screen and (max-width: 1000px) {
         html{
-        background-image: url("/asset/pride.jpg");
+        background-image: url("asset/pride.jpg");
         height: 100%;
         background-position: center;
         background-size: 860px;
