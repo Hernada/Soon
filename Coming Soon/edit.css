@@ -1,0 +1,109 @@
+
+body{
+    height: 50%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo, .logo2{
+    display: none;
+}
+a{
+    color: royalblue;
+    text-decoration: none;
+}
+
+.bgVideo{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -39.3%);
+    z-index: -1; /* keep video behind other content */
+    width: 100%; /* always cover horizontal */
+  }
+
+  /* Position text in the middle */
+  .middle {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+
+  #demo{
+    animation: fadeinout 4s infinite;
+    opacity: 0;
+  }
+  @keyframes fadeinout {
+    70% { opacity: 1; }
+  }
+  /* Style the <hr> element */
+  hr {
+    margin: auto;
+    width: 50%;
+  }
+
+  h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  
+  /*glow*/
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ab47a3,
+        0 0 70px #e666e8, 0 0 80px #9f39bb, 0 0 100px #ab47a3, 0 0 150px #ab47a3;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+        0 0 35px #2511ff, 0 0 40px #2511ff, 0 0 50px #2511ff, 0 0 75px #ff1177;
+    }
+  }
+
+
+@media only screen and (max-width: 1000px) {
+        html{
+        background-image: url("asset/pride.jpg");
+        height: 100%;
+        background-position: center;
+        background-size: 860px;
+        position: relative;
+       }
+
+       .bgVideo{
+        display: none;
+       }
+
+       h1{
+        padding-bottom: 20px;
+        
+       }
+       .middle{
+        width: 100%;
+        font-size: 20px;
+       }
+      
+     .topleft img {
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      
+      .bottomleft img {
+        margin-bottom: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+  }
